@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body{
+  background-color: darkslateblue;
+  color:aliceblue;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formcontainer{
+  margin-top: 25px; 
+  width: 500px;
+  height: 450px;
+  border: 2px solid #b28484;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-image: linear-gradient(rgb(111, 0, 255), rgb(206, 130, 201));
+  justify-content: space-between;
+  padding: 20px;
+ 
+}
+.App{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  
+}
+button {
+  background-color:darkslateblue;
+  border: none;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  opacity: 0.8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  display: flex;
+  justify-content: center;
+}
+.header > h1{
+    color: aliceblue;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  
+}
+.personalinfo{
+  display: flex;
+  flex-direction: column;
+  
+}
+.studies{
+  display: flex;
+  flex-direction: column;
+  
+}
+.reviewinfo{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+input{
+  width:50%;
+  border-radius: 5px;
+  outline: auto;
+  margin: 10px 10px;
+  color: #000 ;
+}
+label{
+  font-weight: 600;
+  
+}
+div{
+  font-weight: 600;
+ 
+}
+.progressbar{
+  height: 20px;
+  border-radius: 10px;
+  width:500px;
+  background-color: aliceblue;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.miniprogressbar{
+  height: 100%;
+  border: 10px;
+  width:25%;
+  background-color: indigo;
+  border-radius: 10px;
 }

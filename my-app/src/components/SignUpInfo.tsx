@@ -3,7 +3,7 @@ import { User } from './Form'
 
 const SignUpInfo:React.FC<{formData:User,setformData:React.Dispatch<React.SetStateAction<User>>}> = ({formData,setformData}) => {
   return (
-      <div>
+      <div className='signup'>
         <label htmlFor="userName">Username</label>
         <input type="text" placeholder="UserName" id="Username" value ={formData.userName} onChange={(event)=>setformData({...formData,userName:event.target.value})}/>
         <label htmlFor="email">Email</label>

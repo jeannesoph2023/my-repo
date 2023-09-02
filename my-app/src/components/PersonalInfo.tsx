@@ -3,7 +3,7 @@ import { User } from './Form'
 
 const PersonalInfo:React.FC<{formData:User,setformData:React.Dispatch<React.SetStateAction<User>>}> = ({formData,setformData}) => {
   return (
-    <div>
+    <div className='personalinfo'>
        <label htmlFor="firstName">Firstname</label>
         <input type="text" id="firstName" value={formData.firstName} onChange={(event)=>setformData({...formData,firstName:event.target.value})}/>
         <label htmlFor="lastName">Lastname</label>

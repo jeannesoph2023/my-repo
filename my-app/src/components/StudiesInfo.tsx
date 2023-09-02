@@ -3,7 +3,7 @@ import { User } from './Form'
 
 const StudiesInfo:React.FC<{formData:User,setformData:React.Dispatch<React.SetStateAction<User>>}> = ({formData,setformData}) => {
   return (
-    <div>
+    <div className='studies'>
       
         <label htmlFor="highschool">Highschool</label>
         <input type="text"  id="highschool"  value={formData.highschool} onChange={(event)=>setformData({...formData,highschool:event.target.value})}/>
